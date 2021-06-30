@@ -3,9 +3,9 @@
     <h1>this is the HOME page</h1>
     <p><%= homeContent %></p>
   <%  blogs.forEach(function(blog){ %>
-<h2> <%= blog.title %> </h2>
+<h2> <%= blog.blogHeading %> </h2>
 
-<p> <%=blog.body.substring(0,100)+"..."%><a href="/posts/<%= blog.title %> ">read more</a> </p>
+<p> <%=blog.blogStory.substring(0,100)+"..."%><a href="/posts/<%= blog._id %>">read more</a> </p>
 <% }); %>
 
 <%- include("partials/footer"); -%>
